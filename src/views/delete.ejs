@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <title>XóaXóa người dùng</title>
+    </head>
+    <body>
+        <h1>Xóa người dùng </h1>
+        <form action="/users/delete/<%= user.id %>" method="GET"
+            style="display: inline;">
+            <input type="hidden" name="_method" value="DELETE">
+            <!-- Sử dụng phương thức DELETE -->
+            <button type="submit" class="btn btn-danger">🗑️ Xóa</button>
+        </form>
+
+        <a href="/home">⬅️ Quay lại</a>
+    </body>
+</html>
